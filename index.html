@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#0452B8">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-transhlucent">
 <meta name="apple-mobile-web-app-title" content="LS Frota Pro">
 <meta name="application-name" content="LS Frota Pro">
 <title>LS Frota Pro</title>
@@ -1115,7 +1115,7 @@ function go(id) {
 // ════════════════════════════════════════
 // WIALON API
 // ════════════════════════════════════════
-const WIALON_BASE = 'https://hst-api.wialon.com/wialon/ajax.html';
+const WIALON_BASE = 'https://hst-api.wialon.us/wialon/ajax.html';
 
 async function wialonReq(svc, params) {
   const url = `${WIALON_BASE}?svc=${svc}&params=${encodeURIComponent(JSON.stringify(params))}${wSid ? '&sid='+wSid : ''}`;
